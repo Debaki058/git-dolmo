@@ -1,5 +1,4 @@
-﻿using
-    System;
+﻿using System;
 
 namespace DebakiApp1
 {
@@ -16,13 +15,20 @@ namespace DebakiApp1
     {
         public string modelName = "Mustang";
     }
+    class Bus : Vehicle
+    {
+        public string modelname = " Toyatw";
+    }
+    
 
     class Program
     {
         static void Main (string[] args)
         {
             Car myCar = new Car();
+            Bus muBus = new Bus();
             myCar.honk();
+              
             Console.WriteLine(myCar.brand + " " + myCar.modelName);
             Console.ReadKey();
         }
